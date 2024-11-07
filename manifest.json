@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Падающий снег",
+  "version": "1.0",
+  "description": "Добавляет эффект падающего снега на страницу.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["snow.js"]
+    }
+  ]
+}
